@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Barlow+Semi+Condensed&family=Open+Sans&family=Poppins&family=Rubik&family=Ubuntu&display=swap');
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: content-box;
+}
+body{
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-family: 'Barlow Semi Condensed', sans-serif;
+ background: hsl(210, 46%, 95%);
+}
+.container{
+ border: 1px solid red; 
+ width: 70%;
+ margin-left: auto;
+ margin-right: auto;
+ font-size: 13px;
+ padding: 20px;
+ display: grid;
+ grid-gap:30px;
+ grid-template-columns: 250px 250px 250px 250px;
+ grid-template-rows: 300px 300px;
+ grid-template-areas: 
+ "cell1 cell1 cell2 cell3"
+ "cell4 cell5 cell5 cell3"
+ ;
+}
+.item{
+ border-radius: 10px;
+ padding: 15px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+ font-size: 13px;
+}
+.item h1{
+ font-size: 16px;
+ margin-bottom: 20px;
+}
+.item p{
+ font-size: 13px;
+}
+.profile{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ align-self: flex-start;
+ margin-bottom: 20px;
+}
+.profile img{
+ margin-right: 20px;
+}
+.cell1{
+ background: hsl(263, 55%, 52%);
+ position: relative;
+ grid-area: cell1;
+ color: white;
+}
+.quotation{
+ position: absolute;
+ top: 0;
+ right: 50px;
+}
+.profile .p-image{
+ width: 33px;
+ height: 33px;
+ border-radius: 20px;
+}
+.cell2{
+ background:hsl(217, 19%, 35%);
+ grid-area: cell2;
+ color: white;
+}
+.cell3{
+ grid-area: cell4;
+ background: white;
+}
+.cell4{
+ background: hsl(219, 29%, 14%);
+ grid-area: cell5;
+ color: white;
+}
+.cell5{
+ grid-area: cell3;
+ background: white;
+}
